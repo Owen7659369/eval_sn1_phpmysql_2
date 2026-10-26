@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	if ($joueur && password_verify($_POST['mot_de_passe'], $joueur['mot_de_passe'])) {
 		$_SESSION['joueur_id'] = $joueur['id'];
 		$_SESSION['pseudo'] = $joueur['pseudo'];
-		header('Location: niveau.php');
+		header('Location: acceuil.php');
 		exit;
 	}
 	$erreur = 'Pseudo ou mot de passe incorrect.';
@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 				<a href="#">Jouer</a>
 				<a href="#">Classement</a>
 				<a href="connection.php">Connexion</a>
-				<a href="#">Créer un compte</a>
+				<a href="inscription.php">Créer un compte</a>
 			</nav>
 		</header>
 		<main class="container auth-wrap">
