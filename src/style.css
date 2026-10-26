@@ -301,6 +301,34 @@ body.app {
 
 .play-form .form-input { flex: 1; }
 
+.play-feedback {
+	background: #e8f1ff;
+	color: var(--accent-normal);
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 700;
+	padding: 1.25rem;
+	border-radius: var(--radius);
+	margin-bottom: 1.25rem;
+}
+
+.play-endgame {
+	text-align: center;
+	padding: 1rem 0;
+}
+
+.endgame-title {
+	margin: 0 0 0.75rem;
+	font-size: 1.75rem;
+	font-weight: 700;
+}
+
+.play-endgame.won  .endgame-title { color: var(--accent-facile); }
+.play-endgame.lost .endgame-title { color: var(--accent-expert); }
+
+.endgame-message { margin: 0 0 0.5rem; color: var(--text); }
+.endgame-hint    { margin: 0; color: var(--muted); font-size: 0.9rem; }
+
 @media (max-width: 640px) {
 	.topbar { padding: 0.75rem 1rem; flex-wrap: wrap; gap: 0.75rem; }
 	.nav { gap: 1rem; font-size: 0.9rem; }
