@@ -329,6 +329,70 @@ body.app {
 .endgame-message { margin: 0 0 0.5rem; color: var(--text); }
 .endgame-hint    { margin: 0; color: var(--muted); font-size: 0.9rem; }
 
+.niveau-tabs {
+	display: flex;
+	gap: 0.5rem;
+	margin-bottom: 1.25rem;
+	flex-wrap: wrap;
+}
+
+.niveau-tab {
+	padding: 0.5rem 1rem;
+	border-radius: 999px;
+	background: var(--panel);
+	color: var(--text);
+	text-decoration: none;
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+
+.niveau-tab:hover  { background: #e2e8f0; }
+.niveau-tab.active { background: var(--navy); color: #fff; }
+
+.leaderboard-card {
+	background: var(--card);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow);
+	overflow: hidden;
+}
+
+.leaderboard-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 0.95rem;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+	padding: 0.85rem 1rem;
+	text-align: left;
+	border-bottom: 1px solid var(--border);
+}
+
+.leaderboard-table thead th {
+	background: var(--panel);
+	color: var(--muted);
+	font-weight: 600;
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+}
+
+.leaderboard-table tbody tr:last-child td { border-bottom: none; }
+
+.leaderboard-table tbody tr.me {
+	background: #f5e9c8;
+	font-weight: 600;
+}
+
+.leaderboard-table tbody tr.me:hover { background: #efdfae; }
+
+.leaderboard-empty {
+	text-align: center;
+	color: var(--muted);
+	padding: 2rem 1rem;
+}
+
 @media (max-width: 640px) {
 	.topbar { padding: 0.75rem 1rem; flex-wrap: wrap; gap: 0.75rem; }
 	.nav { gap: 1rem; font-size: 0.9rem; }
