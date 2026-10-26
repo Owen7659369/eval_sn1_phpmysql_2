@@ -38,6 +38,7 @@ $me = $_SESSION['joueur_id'] ?? null;
 				<a href="acceuil.php">Jouer</a>
 				<a href="leaderboard.php">Classement</a>
 				<?php if (isset($_SESSION['pseudo'])): ?>
+					<a href="statistics.php">Mes stats</a>
 					<span class="nav-user"><?= htmlspecialchars($_SESSION['pseudo']) ?> | <a href="deconnection.php">Se déconnecter</a></span>
 				<?php else: ?>
 					<a href="connection.php">Connexion</a>

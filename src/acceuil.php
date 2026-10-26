@@ -18,8 +18,8 @@ $data = get_difficulties($dbh);
 			<a href="acceuil.php" class="brand">± Plus ou Moins</a>
 			<nav class="nav">
 				<a href="acceuil.php">Jouer</a>
-				<a href="#">Classement</a>
-				<a href="#">Mes stats</a>
+				<a href="leaderboard.php">Classement</a>
+				<a href="statistics.php">Mes stats</a>
 				<span class="nav-user"><?= htmlspecialchars($_SESSION["pseudo"]) ?> | <a href="deconnection.php">Se déconnecter</a></span>
 			</nav>
 		</header>
