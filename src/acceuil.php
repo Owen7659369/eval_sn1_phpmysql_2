@@ -2,7 +2,6 @@
 require_once 'config.php';
 include 'main.php';
 
-$_SESSION["pseudo"] = "admin";
 $data = get_difficulties($dbh);
 ?>
 <!DOCTYPE html>
