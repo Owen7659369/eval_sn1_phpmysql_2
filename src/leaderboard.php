@@ -53,7 +53,7 @@ $me = $_SESSION['joueur_id'] ?? null;
 				<?php foreach ([1 => 'Facile', 2 => 'Normal', 3 => 'Difficile', 4 => 'Expert'] as $id => $nom): ?>
 					<a href="leaderboard.php?niveau=<?= $id ?>"
 					   class="niveau-tab<?= $id === $niveau_id ? ' active' : '' ?>">
-					   <?= $nom ?>
+					   <?= htmlspecialchars($nom) ?>
 					</a>
 				<?php endforeach; ?>
 			</nav>
